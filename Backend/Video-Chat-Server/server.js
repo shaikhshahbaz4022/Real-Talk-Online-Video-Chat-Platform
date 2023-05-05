@@ -32,10 +32,10 @@ const io = new Server(httpServer, {
 })
 
 io.on("connection", (socket) => {
-    socket.on("user-connected", (roomID, userID) => {
-        console.log(`${userID}Joined the Room ${roomID}`);
+    socket.on("join-room", (roomID, userID) => {
+        console.log(`${userID} Joined the Room ${roomID}`);
         socket.join(roomID)
-        socket.emit(roomID).emit("user-join", userID)
+        socket.to(roomID).emit("user-join", userID)
 
         socket.on("disconnect", () => {
             socket.to(roomID).emit("user-disconnected", userID)
