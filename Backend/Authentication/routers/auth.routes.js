@@ -2,7 +2,8 @@ const express = require("express");
 const { testModel } = require("../model/test");
 const fetch = (...args) => import("node-fetch").then(({ default: fetch }) => fetch(...args));
 const authRoute = express.Router();
-const passport = require("passport");
+const passport = require("passport"); 
+var userProfile
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 require("dotenv").config();
 // const idnex= require("../dashboard.html")
@@ -23,29 +24,38 @@ authRoute.get(
   })
 );
 authRoute.get('/auth/google/success', (req, res) => {
-  console.log("dashboard")
-  res.sendFile(__dirname+ "/../view/dashboard.html")
-  
-})
-const GOOGLE_CLIENT_ID = "583391664954-j2jsnbsg2lmqbnrgj21baorh1msstdj5.apps.googleusercontent.com"
-const GOOGLE_CLIENT_SECRET = "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"
+  console.log("dashboard") 
+  console.log(userProfile)  
+  res.send(userProfile)
+  res.redirect("")
+ // res.send(userProfile)
+  //res.sendFile(__dirname+ "C:\Users\Dell\Desktop\chummy-run-6992\Backend\Authentication\view\dashboard.html") 
+  //res.send("successfully login",userProfile) 
+  //res.redirect("/") 
+  //res.redirect('/success');
+}) 
+authRoute.get('/profile', (req, res) => res.send(userProfile));
+const GOOGLE_CLIENT_ID = "993273098507-6j4907e7e8jjjdb1pgrv68aau62inq4g.apps.googleusercontent.com"
+const GOOGLE_CLIENT_SECRET = "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"
 passport.use(
 
   new GoogleStrategy(
     {
       clientID: GOOGLE_CLIENT_ID,
       clientSecret: GOOGLE_CLIENT_SECRET,
-      callbackURL: "https://talkies-authentication-server-1.onrender.com/auth/google/callback",
+      callbackURL: "http://localhost:8080/auth/google/callback",
       passReqToCallback: true,
     },
-    async function (request, accessToken, refreshToken, profile, done) {
+    async function (request, accessToken, refreshToken, profile, done) { 
+      userProfile=profile
       let email = profile._json.email;
       let name = profile._json.name;
-      const user = new testModel({ email, name });
+      const user = new testModel({ email, name }); 
+      console.log(user);
+    
       await user.save();
       return done(null, user);
-      //   console.log(profile);
-    }
+    }   
   )
 
 );

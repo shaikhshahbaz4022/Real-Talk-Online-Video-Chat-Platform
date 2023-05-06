@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(logger)
 
 app.get("/",(req,res)=>{
-     res.send("welcome to Talkies home page")
+     res.send("welcome to Real Talk home page")
 })
 
 app.use("/user",userrouter);

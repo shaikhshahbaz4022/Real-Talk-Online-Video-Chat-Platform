@@ -9,9 +9,9 @@ passport3.use(
     {
       clientID: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
-      callbackURL: "https://talkies-authentication-server-1.onrender.com/auth/github/callback",
+      callbackURL: "https://localhost:8080/auth/github/",
       scope: "user:email",
-    },
+    },callback
     async function (accessToken, refreshToken, profile, done) {
       let email = profile.emails[0].value;
       let udata = await usermodel.findOne({ email });
