@@ -6,6 +6,8 @@ new AWN().asyncBlock(
 )
 
 const socket = io(`${BASE_SERVER_URL}`)
+const hideA = document.getElementById('hide-audio');
+const hideV = document.getElementById('hide-video');
 const videoDiv = document.getElementById("videoDiv")
 const room = document.getElementById("roomID");
 
@@ -17,7 +19,7 @@ let userStream;
 const urlParams = new URLSearchParams(window.location.search);
 const roomID = urlParams.get('roomID');
 
-room.innerText = `Your Room ID is ${roomID}, Enter To Proceed Further`;
+room.innerText = `Welcome to your virtual hangout! Your room ID is ${roomID}`;
 
 const video = document.createElement('video');
 video.muted = true;
@@ -103,3 +105,52 @@ const addStream = (video, stream) => {
     videoDiv.append(video)
 
 }
+
+
+//video hide code
+hideV.addEventListener("click", () => {
+    const videoTrack = userStream.getTracks().find(track => track.kind === 'video');
+    if (videoTrack.enabled) {
+        videoTrack.enabled = false;
+        hideV.style.width = "50px";
+        hideV.style.height = "50px";
+        hideV.style.cursor = "pointer";
+        hideV.style.backgroundColor = "black";
+        hideV.style.borderRadius = "100%";
+        hideV.style.padding = "8px";
+       
+    } else {
+        videoTrack.enabled = true;
+        hideV.style.width = "50px";
+        hideV.style.height = "50px";
+        hideV.style.cursor = "pointer";
+        hideV.style.backgroundColor = "white";
+        hideV.style.borderRadius = "100%";
+        hideV.style.padding = "8px";
+       
+    }
+})
+
+//disable audio
+// Disable audio functionality
+hideA.addEventListener("click", () => {
+    const audioTrack = userStream.getTracks().find(track => track.kind === 'audio');
+    if (audioTrack.enabled) {
+        audioTrack.enabled = false;
+        hideA.style.width = "50px";
+        hideA.style.height = "50px";
+        hideA.style.cursor = "pointer";
+        hideA.style.backgroundColor = "black";
+        hideA.style.borderRadius = "100%";
+        hideA.style.padding = "8px";
+    } else {
+        audioTrack.enabled = true;
+        hideA.style.width = "50px";
+        hideA.style.height = "50px";
+        hideA.style.cursor = "pointer";
+        hideA.style.backgroundColor = "white";
+        hideA.style.borderRadius = "100%";
+        hideA.style.padding = "8px";
+    }
+});
+
