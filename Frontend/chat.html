@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Talk | chat</title>
+
     <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
-    <script src="scripts/chat.js"></script>
-    <link rel="stylesheet" href="styles/chat.css">
-</head>
-<body>
+
+    <link rel="stylesheet" href="styles/chat.css" />
+  </head>
+  <body>
     <nav>
-     <img src="images/real talk.png" class="logo" alt="">
+      <img src="images/real talk.png" class="logo" alt="" />
     </nav>
     <div class="container">
-        <div class="message left">Aman:hey how are you?</div>
-        <div class="message center">Rohan:joined the chat</div>
-        <div class="message right">Rohan: I am fine</div>
+      <div class="message left">Aman:hey how are you?</div>
+      <div class="message center">Rohan:joined the chat</div>
+      <div class="message right">Rohan: I am fine</div>
     </div>
 
     <div class="send">
-        <form action="#" id="send-container">
-            <input type="text" name="messageInp" id="messageInp">
-            <button class="btn" type="submit">Send</button>
-        </form>
+      <form action="#" id="send-container">
+        <input type="text" name="messageInp" id="messageInp" />
+        <button class="btn" type="submit">Send</button>
+      </form>
     </div>
-
-</body>
+  </body>
+  <script src="scripts/chat.js"></script>
 </html>
