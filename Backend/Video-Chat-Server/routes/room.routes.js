@@ -15,6 +15,7 @@ RoomRouter.post("/create", async (req, res) => {
 
     }
 })
+
 RoomRouter.post("/join", async (req, res) => {
     try {
         const { roomID, type } = req.body
