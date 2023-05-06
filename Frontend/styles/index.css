@@ -19,10 +19,17 @@ body {
 
 /* navbar css start */
 
+.nav-menu {
+  /* border: 2px solid red; */
+  width: 80%;
+}
+
 .nav-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-evenly;
     /* background-color: #333; */
   }
   
@@ -70,10 +77,17 @@ body {
 
 /* sign-in-part */
 
+.sign-in {
+  /* border: 2px solid red; */
+  
+}
+
 .sign-in ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-evenly;
     /* background-color: #333; */
   }
   
@@ -170,6 +184,11 @@ body {
   /* border: 2px solid red; */
   width: 200px;
   
+  
+}
+
+.image img {
+  border-radius: 7px;
 }
 .sign-in a {
     text-decoration: none;
@@ -294,7 +313,7 @@ body {
 #mid-third div {
   /* border: 2px solid red; */
   /* padding: 0; */
-  height: 80vh;
+  height: 85vh;
   /* text-align: center; */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 5px;
