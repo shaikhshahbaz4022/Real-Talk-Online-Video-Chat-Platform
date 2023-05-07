@@ -2,30 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Real Talk | chat</title>
-
-    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="styles/chat.css" />
+    <link rel="icon" href="./Images/fav_icon-bg.png" />
+    <script
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./styles/chat.css" />
+    <title>Real Talk | Chat</title>
   </head>
+
   <body>
-    <nav>
-      <img src="images/real talk.png" class="logo" alt="" />
-    </nav>
-    <div class="container">
-      <div class="message left">Aman:hey how are you?</div>
-      <div class="message center">Rohan:joined the chat</div>
-      <div class="message right">Rohan: I am fine</div>
+    <div id="logo">
+      <img src="./images/real_talk_blue.png.crdownload" alt="" />
     </div>
 
-    <div class="send">
-      <form action="#" id="send-container">
-        <input type="text" name="messageInp" id="messageInp" />
-        <button class="btn" type="submit">Send</button>
-      </form>
+    <div>
+      <h1>Welcome to Real Talk Chat Platform</h1>
     </div>
+
+    <div id="main">
+      <!-- User and roon details -->
+      <div id="room-user">
+        <div id="room">
+          <div id="room-name">
+            Room-ID :-&nbsp;&nbsp;<span id="room-id"></span>
+          </div>
+        </div>
+
+        <div id="user-online">
+          <div id="user-heading">Members</div>
+          <div id="members">
+            <!-- All the room members -->
+          </div>
+        </div>
+        <div id="leave">Leave Room</div>
+      </div>
+
+      <div id="message-container">
+        <div id="msgs">Messages</div>
+
+        <div id="messages">
+          <!-- All the messsages -->
+        </div>
+
+        <div id="type-message">
+          <input
+            type="text"
+            id="text"
+            placeholder="Type Your message"
+            required
+          />
+          <div id="send">Send</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Scripts/message.js"></script>
   </body>
-  <script src="scripts/chat.js"></script>
 </html>
