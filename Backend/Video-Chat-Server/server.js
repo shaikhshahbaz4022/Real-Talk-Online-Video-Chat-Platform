@@ -52,7 +52,7 @@ client.on("error", (err) => {
 
 httpServer.listen(process.env.PORT, async () => {
     try {
-        await client
+        await client.connect()
         console.log("Connected to Redis Succesfully");
     } catch (error) {
         console.log(error);
