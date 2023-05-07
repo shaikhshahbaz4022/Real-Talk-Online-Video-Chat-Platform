@@ -11,6 +11,10 @@
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     
@@ -24,14 +28,18 @@
                 <p>Set a status</p>
             </div>
  
-            <div class="dots-container">
+            <div id="myDropdown">
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
               <div id="search">
-                <label for="example-input"><img src="./images/search_icon.png" alt="error"></label>
+                <!-- <label for="example-input"><img src="./images/search_icon.png" alt="error"></label> -->
+                
                 <input type="text" id="example-input" name="example-input" placeholder="People, groups, messages">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
               </div>
               <div id="all-icon">
               <div id="chat-menu">
@@ -68,8 +76,8 @@
             </div>
             <div id="chat-image-logo">
                 <img src="https://secure.skypeassets.com/wcss/8-97-0-206/images/onboarding/chats_emptystate_v1.png" alt="error">
-                <h2>Start chatting on Skype</h2>
-                <p>Use search to find anyone on Skyye</p>
+                <h2>Start chatting on Real Talk</h2>
+                <p>Use search to find anyone on Real Talk</p>
             </div>
         </div>
 
@@ -91,13 +99,13 @@
             <div class="section-1">
                 <img src="./images/1st_image.png" alt="error">
                 <h3 id="title">Easy meeting with anyone</h3>
-                <p id="no-title">Share the invite with anyone even if they aren't on Skype. No sign ups or downloads required.</p>
+                <p id="no-title">Share the invite with anyone even if they aren't on Real Talk. No sign ups or downloads required.</p>
                 <a href="#"><button style="font-weight: bolder" >Meet Now</button></a>
             </div>
             <div class="section-2">
                 <img src="./images/2nd_image.png" alt="error">
-                <h3 id="title">Stay available with second Skype Number</h3>
-                <p id="no-title">Let people call you for local rates by purchasing your second phone number with Skype.</p>
+                <h3 id="title">Stay available with chat now</h3>
+                <p id="no-title">Let people call you for local rates by purchasing your second phone number with Real Talk.</p>
                 <button style="font-weight: bolder">Chat Now</button>
             </div>
            </div>
@@ -111,4 +119,32 @@
         <!-- right-div-end -->
     </div>
 </body>
+<script>
+    // Get the container element
+const dropdownContainer = document.getElementById("myDropdown");
+
+// Create the dropdown menu element
+const dropdownMenu = document.createElement("div");
+dropdownMenu.classList.add("dropdown-menu");
+
+// Add some options to the dropdown menu
+const option1 = document.createElement("a");
+
+const option2 = document.createElement("a");
+option2.innerText = "Logout";
+dropdownMenu.appendChild(option2);
+
+option2.addEventListener("click",()=>{
+    window.location.href = "index.html";
+})
+
+// Add the dropdown menu to the container element
+dropdownContainer.appendChild(dropdownMenu);
+
+// Show the dropdown menu when the container is clicked
+dropdownContainer.addEventListener("click", function() {
+  dropdownContainer.classList.toggle("show");
+});
+
+</script>
 </html>
