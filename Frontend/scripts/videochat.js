@@ -118,7 +118,7 @@ hideV.addEventListener("click", () => {
         hideV.style.backgroundColor = "black";
         hideV.style.borderRadius = "100%";
         hideV.style.padding = "8px";
-       
+        
     } else {
         videoTrack.enabled = true;
         hideV.style.width = "50px";
@@ -127,7 +127,7 @@ hideV.addEventListener("click", () => {
         hideV.style.backgroundColor = "white";
         hideV.style.borderRadius = "100%";
         hideV.style.padding = "8px";
-       
+        
     }
 })
 
