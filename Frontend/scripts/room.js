@@ -31,7 +31,7 @@ create.addEventListener("click", () => {
             const res = await request.json() //ok:true
             if (res.ok) {
                 if (type == "message") {
-                    window.location.href = `#`
+                    window.location.href = `./chat.html?type=${type}&roomID=${room}`
                 } else if (type == "videochat") {
                     window.location.href = `./videochat.html?type=${type}&roomID=${room}`
                 }
@@ -92,7 +92,7 @@ joinRoom.addEventListener("click", () => {
             const response = await request.json();
             if (response.ok) {
                 if (type == "message") {
-                    window.location.href = `./message.html?type=${type}&roomID=${roomID}`;
+                    window.location.href = `./chat.html?type=${type}&roomID=${roomID}`;
 
                 } else if (type == "videochat") {
 
