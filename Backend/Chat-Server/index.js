@@ -35,7 +35,7 @@ io.on("connection", (socket) => {
     // Welcome message
     socket.emit(
       "message",
-      formateMessage("Server ", " Welcome to Talkies Chat Server")
+      formateMessage("Server ", " Welcome to Real Talk Application")
     );
 
     // Broadcasting other users

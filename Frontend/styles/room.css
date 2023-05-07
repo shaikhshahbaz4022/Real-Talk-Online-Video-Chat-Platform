@@ -1,12 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
 body{
-    font-family: 'Poppins', sans-serif;
+    background-image: url("https://img.freepik.com/premium-photo/blank-blue-cement-wall-texture-background_7190-199.jpg?w=996");
+    font-family: 'Open Sans', sans-serif;
     background-color: #FAFAFA;
 }
-
-h1{
+#title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc; 
+    text-shadow: 1px 1px #eee;
+  }
+  
+  
+/* h1{
     font-size: 45px;
     text-align: center;
-}
+} */
 
 h2{
     text-align: center;

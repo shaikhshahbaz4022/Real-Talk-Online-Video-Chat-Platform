@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
     <title>My Dashboard</title>
      <link rel="stylesheet" href="./styles/dashboard.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -34,12 +38,17 @@
                 <span class="dot"></span>
               </div>
               <div id="search">
+
                 <!-- <label for="example-input"><img src="./images/search_icon.png" alt="error"></label> -->
                 
                 <input type="text" id="example-input" name="example-input" placeholder="People, groups, messages">
                 <span class="material-symbols-outlined">
                     search
                     </span>
+
+                <input type="text" id="example-input" name="example-input" placeholder="People, groups, messages">
+                <label id="search-btn" for="example-input"><img id="serch-img" src="./images/search_icon.png" alt="error"></label>
+
               </div>
               <div id="all-icon">
               <div id="chat-menu">
@@ -68,8 +77,8 @@
               </div>
             </div>
             <div id="meet-now">
-                <a href="#"><button>Meet Now</button></a>
-                <a href="#"><button>New Chat</button></a>
+                <a href="#"><button id="videoBtn">Meet Now</button></a>
+                <a href="#"><button id="chatBtn">New Chat</button></a>
             </div>
             <div id="recent-chats">
                 <p>Recent Chats ></p>
@@ -99,6 +108,7 @@
             <div class="section-1">
                 <img src="./images/1st_image.png" alt="error">
                 <h3 id="title">Easy meeting with anyone</h3>
+
                 <p id="no-title">Share the invite with anyone even if they aren't on Real Talk. No sign ups or downloads required.</p>
                 <a href="#"><button style="font-weight: bolder" >Meet Now</button></a>
             </div>
@@ -107,6 +117,16 @@
                 <h3 id="title">Stay available with chat now</h3>
                 <p id="no-title">Let people call you for local rates by purchasing your second phone number with Real Talk.</p>
                 <button style="font-weight: bolder">Chat Now</button>
+
+                <p id="no-title">Share the invite with anyone even if they aren't on Skype. No sign ups or downloads required.</p>
+                <a href="#"><button id="center-video-btn" style="font-weight: bolder" >Meet Now</button></a>
+            </div>
+            <div class="section-2">
+                <img src="./images/2nd_image.png" alt="error">
+                <h3 id="title">Stay available with second Skype Number</h3>
+                <p id="no-title">Let people call you for local rates by purchasing your second phone number with Skype.</p>
+                <button id="center-chat-btn" style="font-weight: bolder">Chat Now</button>
+
             </div>
            </div>
            <div id="last-mail">
@@ -119,6 +139,7 @@
         <!-- right-div-end -->
     </div>
 </body>
+
 <script>
     // Get the container element
 const dropdownContainer = document.getElementById("myDropdown");
@@ -147,4 +168,7 @@ dropdownContainer.addEventListener("click", function() {
 });
 
 </script>
+
+<script src="./scripts/dashbord.js"></script>
+
 </html>
