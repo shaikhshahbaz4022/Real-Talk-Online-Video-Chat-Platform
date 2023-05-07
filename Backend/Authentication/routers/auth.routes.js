@@ -27,7 +27,7 @@ authRoute.get('/auth/google/success', (req, res) => {
   console.log("dashboard") 
   console.log(userProfile)  
   res.send(userProfile)
-  res.redirect("")
+  //res.redirect("")
  // res.send(userProfile)
   //res.sendFile(__dirname+ "C:\Users\Dell\Desktop\chummy-run-6992\Backend\Authentication\view\dashboard.html") 
   //res.send("successfully login",userProfile) 
@@ -43,7 +43,7 @@ passport.use(
     {
       clientID: GOOGLE_CLIENT_ID,
       clientSecret: GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:8080/auth/google/callback",
+      callbackURL: "https://realtalk-xptc.onrender.com/auth/google/callback",
       passReqToCallback: true,
     },
     async function (request, accessToken, refreshToken, profile, done) { 
