@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="page-container">
+      <div class="grid-container">
+        <div class="left-side">
+          <div class="img-and-text">
+            <img class="cart-illustration" src="./images/real_talk_blue.png" alt="">
+            <!-- <h1>Start for free and get attractive offers.</h1> -->
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="wrapper">
+            <h2>Get started.</h2>
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <div class="sign-up-buttons">
+              <button id="sign-up"><img src="./images/google-icon.png"> Sign up with Google</button>
+              <button id="sign-up-facebook"><img src="./images/facebook-icon.svg" width="16px"> Sign up with facebook</button>
+            </div>
+            <p class="socials-divider"><span>or</span></p>
+
+            <form action="">
+              <label for="email">Email address</label>
+              <div class="email-input-container">
+                <i class="fi fi-rr-envelope icon-email"></i>
+                <input type="email" name="email_address" placeholder="exemple@gmail.com" id="email">
+              </div>
+              <label for="password">Password</label>
+
+              <div class="password-input-container">
+                <i class="fi fi-rr-lock icon-password"></i>
+                <input type="password" name="password" placeholder="Your password" id="password">
+              </div>
+
+            </form>
+
+            <div class="agreement-check">
+              <input type="checkbox" name="terms_of_service_and_privacy_policy">
+              <span class="terms-of-use-text">I agree to Plataform's
+                <a href="#">Terms of Service</a> and
+                <a href="#">Privacy Policy</a>
+              </span>
+            </div>
+
+            <button id="register-button" type="submit">Register</button>
+            <p class="credits">Made with ❤️ by <a href="https://github.com/aluizamendes" target="_blank">aluizamendes</a></p>
+          </div>
+        </div>    
+      </div>
+    </div>
+  </main>
+</body>
+</html>

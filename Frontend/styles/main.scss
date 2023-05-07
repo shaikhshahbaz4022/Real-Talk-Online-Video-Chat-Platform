@@ -1,0 +1,353 @@
+/* Variables */
+
+$primarySalmon: #E98265;
+$salmonDark: #c1593c;
+$lightSalmon: #f39d85;
+$primaryPurple: #9983D8;
+$lightPurple: #ded8ef;
+$lightGrey: #d0d3d7;
+
+$bodyTextColor: #88898a;
+$darkTextColor: #323537;
+$labelTextColor: #9c9ea1;
+
+@mixin primaryButton {
+  background-color: $primarySalmon;
+  padding: 1.4rem 3.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1.6rem rgba(233, 130, 101, 0.587);
+}
+
+@mixin socialButton {
+  background-color: #fff;
+  padding: 1.4rem 2.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: $darkTextColor;
+  border: 0.1rem solid $lightGrey;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@mixin facebookButton {
+  background-color: #3b5998;
+  padding: 1.4rem 2.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+* { box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  margin-inline: auto;
+  width: min(90%,50rem);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+
+}
+
+.left-side {
+  background-color: $lightPurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8.8rem;
+
+  .cart-illustration {
+    width: 580px;
+    margin: auto;
+    display: block;
+  }
+
+  .img-and-text {
+    h1 {
+      color: $darkTextColor;
+      text-align: center;
+      font-size: 3.2rem;
+      font-weight: 600;
+      line-height: 4rem;
+      width: 500px;
+      margin-inline: auto;
+    }
+  }
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+
+  a {
+    color: $primarySalmon;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+    &:hover {
+      color: $salmonDark;
+    }
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $darkTextColor
+  }
+
+  p {
+    color: $bodyTextColor;
+    padding: 1.6rem 0;
+  }
+
+  .sign-up-buttons {
+    padding-top: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem
+  }
+
+  #sign-up {
+    @include socialButton;
+  }
+
+  #sign-up-facebook {
+    @include facebookButton;
+  }
+
+  .socials-divider {
+    text-align: center;
+    position: relative;
+    margin: 1.6rem 1.6rem;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 45%;
+      height: 0.1rem;
+      background-color: $lightGrey;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 45%;
+      height: 0.1rem;
+      background-color: $lightGrey;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: $darkTextColor;
+      margin-bottom: 1rem;
+    }
+
+    .email-input-container {
+      position: relative;
+
+      .icon-email {
+        position: absolute;
+        top: 2rem;
+        left: 2.4rem;
+        color: $darkTextColor;
+
+      }
+    }
+
+    .password-input-container {
+      position: relative;
+
+      .icon-password {
+        position: absolute;
+        top: 2rem;
+        left: 2.4rem;
+        color: $darkTextColor;
+
+      }
+    }
+
+    input {
+      padding: 1.6rem 2.4rem 1.6rem 5.4rem;
+      border-radius: 0.8rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.4rem;
+      border: 0.1rem solid $lightGrey;
+      margin-bottom: 3.2rem;
+      width: 100%;
+      transition: all 0.4s ease;
+
+      &:focus {
+      border: 0.1rem solid $primarySalmon;
+      background-color: none;
+      outline: none;
+      box-shadow: 0 0 0.8rem rgba(233, 130, 101, 0.241);
+      }
+    }
+  }
+
+  .agreement-check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 4.8rem;
+
+    span {
+      font-size: 1.4rem;
+      color: $bodyTextColor;
+    }
+  }
+
+  #register-button {
+    display: inline-block;
+    width: 100%;
+    transition: all 0.4s ease;
+
+    @include primaryButton;
+
+    &:hover {
+      background-color: $lightSalmon;
+    }
+  }
+
+  .credits {
+    font-size: 1.2rem;
+    color: $bodyTextColor;
+    text-align: center;
+    padding-top: 2.4rem;
+  }
+}
+
+/* Media queries */
+@media (max-width: 1255px) {
+  .left-side {
+    padding: 2rem;
+
+    .cart-illustration {
+      width: 450px;
+    }
+  }
+  .grid-container {
+  grid-template-columns: repeat(4, 1fr);
+  }
+
+  .right-side {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 1000px) {
+  .left-side {
+    padding: 1rem;
+
+    .cart-illustration {
+      width: 300px;
+    }
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .right-side {
+    grid-column: span 4;
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    padding: 1rem;
+
+    .cart-illustration {
+      display: none;
+    }
+
+    .img-and-text {
+      h1 {
+        text-align: left;
+      }
+    }
+  }
+
+  .right-side {
+    grid-column: auto;
+
+    h2 {
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 55%;
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    grid-column: auto;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3.2rem;
+
+    h2 {
+      display: inline-block;
+    }
+
+    .sign-up-buttons {
+      flex-direction: column;
+    }
+
+    .agreement-check {
+      span {
+        line-height: 2.4rem;
+      }
+    }  
+  }
+}
