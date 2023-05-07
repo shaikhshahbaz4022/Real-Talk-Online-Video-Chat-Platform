@@ -3,9 +3,29 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgb(255,255,255),#B3E5FC);
+    
+}
+
+.material-symbols-outlined {
+  /* font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48, */
+  margin-left: 10px;
+}
+
+#example-input {
+    margin-left: 20px;
+}
+
 #main {
     display: flex;
     /* border: 2px solid red; */
+    justify-content: space-evenly;
 }
 
 #left {
@@ -13,6 +33,7 @@
     height: 100vh;
     /* border: 2px solid red; */
     /* display: flex; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #right {
@@ -23,7 +44,7 @@
 
 #name {
     /* border: 2px solid red; */
-    margin-top: 9px;
+    margin-top: 18px;
     font-size: 12px;
     padding-left: 20px;
     color: blue;
@@ -44,16 +65,49 @@
 
 /* hamburger-menu-start */
 
-.dots-container {
+#myDropdown {
     display: flex;
     align-items: center;
     justify-content: center;
     /* border: 2px solid green; */
     height: 20px;
     margin-top: -30px;
-    margin-left: 50%;
+    margin-left: 75%;
+    width: 20%;
+    /* display: inline-block; */
+    position: relative;
+    cursor: pointer;
   }
   
+
+
+  
+  /* The dropdown menu */
+  #myDropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    /* align-items: center; */
+  }
+  
+  /* Show the dropdown menu when the container is clicked */
+  #myDropdown.show .dropdown-menu {
+    display: block;
+    /* border: 2px solid red; */
+    width: 83%;
+    margin-top: 7px;
+    align-items: center;
+    margin-left: 10px;
+
+
+  }
+  
+
+
+
+
   .dot {
     display: inline-block;
     width: 6px;
@@ -68,8 +122,10 @@
 
 
 #search {
-    display: block;
+    display: flex;
     margin-top: 20px;
+    align-items: center;
+    /* justify-content: space-around; */
 }
 
 #search input {
@@ -202,6 +258,8 @@
     color: rgb(14, 114, 207);
     font-family: "SF Regular", "Segoe System UI Regular", "Segoe UI Regular", sans-serif;
     font-weight: bold;
+    margin-left: 10px;
+
 }
 
 #all-icon {
@@ -261,6 +319,7 @@
     height: 50px;
     margin-left: 20px;
     margin-top: 10px;
+   
 }
 
 #meet-now button {
@@ -270,8 +329,11 @@
     border-radius: 10px;
     margin-right: 16px;
     margin-top: 10px;
-    background-color: white;
+    /* background-color: white; */
     cursor: pointer;
+    background: linear-gradient(135deg, rgb(9, 154, 222), rgb(16, 84, 173));
+    color: white;
+    border-radius: 10px;
 }
 
 #recent-chats {
