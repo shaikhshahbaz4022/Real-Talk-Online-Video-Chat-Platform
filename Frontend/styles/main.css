@@ -7,10 +7,24 @@ html {
   font-size: 62.5%;
 }
 
+#main {
+  width: 80%;
+  margin: auto;
+  /* margin-top: 4%; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  /* border: 2px solid red; */
+  /* height: 70vh; */
+}
+
 body {
   background-color: #ffffff;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  background-image: url("https://img.freepik.com/premium-photo/blue-paper-with-white-background_839976-213.jpg?w=1060");
+}
+
+.wrapper > p a {
+  color: #3F51B5;
 }
 
 .wrapper {
@@ -25,14 +39,14 @@ body {
 }
 
 .left-side {
-  background-color: #ded8ef;
+  /* background-color: #ded8ef; */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 8.8rem;
 }
 .left-side .cart-illustration {
-  width: 500px;
+  width: 400px;
   margin: auto;
   display: block;
   border-radius: 20px;
@@ -90,14 +104,15 @@ body {
   gap: 1rem;
 }
 .right-side #sign-up-facebook {
-  background-color: #3b5998;
+  background-color: #fff;
   padding: 1.4rem 2.4rem;
   cursor: pointer;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: black;
   border: none;
   border-radius: 0.8rem;
+  border: 0.1rem solid #d0d3d7;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -179,11 +194,15 @@ body {
   font-size: 1.4rem;
   color: #88898a;
 }
+
+.agreement-check a {
+  color: #3F51B5;
+}
 .right-side #register-button {
   display: inline-block;
   width: 100%;
   transition: all 0.4s ease;
-  background-color: #E98265;
+  background-color: #0078ca;
   padding: 1.4rem 3.2rem;
   cursor: pointer;
   font-weight: 500;
@@ -194,7 +213,7 @@ body {
   box-shadow: 0 0 1.6rem rgba(233, 130, 101, 0.587);
 }
 .right-side #register-button:hover {
-  background-color: #f39d85;
+  background-color: #3F51B5;
 }
 .right-side .credits {
   font-size: 1.2rem;
@@ -283,3 +302,4 @@ body {
     line-height: 2.4rem;
   }
 }/*# sourceMappingURL=main.css.map */
+
