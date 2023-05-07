@@ -1,21 +1,3 @@
-// console.log("connected");
-
-
-
-
-
-
-
-// const socket = io("http://localhost:5000/",{transports:["websocket"]});
-
-
-// socket.emit("joinRoom", ({ username, room }));
-
-// socket.on("message", (message) => {
-
-//     outputMessage(message);
-
-// })
 const send = document.getElementById("send");
 const chatMessages = document.getElementById("messages");
 const roomName = document.getElementById("room-id");
@@ -25,16 +7,16 @@ const urlParams = new URLSearchParams(window.location.search)
 
 const room = urlParams.get("roomID");
 console.log(room);
-const username = JSON.parse(localStorage.getItem("userDetails")).name;
-// const username = "rishab"
+// const username = JSON.parse(localStorage.getItem("userDetails")).name;
+const username = "Aman"
 
 
-const socket = io("http://localhost:5000/", { transports: ["websocket"] });
+const socket = io("https://real-talk-chat-server.onrender.com/", { transports: ["websocket"] });
 
 socket.emit("joinRoom", ({ username, room }));
 
 socket.on("message", (message) => {
-
+    console.log(message)
     outputMessage(message);
 
 })
@@ -92,7 +74,7 @@ function outputMessage(message) {
 
     p.innerText = message.username;
 
-    p.innerHTML += `<span>${message.time}</span>`;
+    p.innerHTML += `<span> ${message.time}</span>`;
 
     div.appendChild(p);
 

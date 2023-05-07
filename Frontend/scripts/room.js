@@ -1,7 +1,7 @@
 const joinRoom = document.getElementById("join-room")
 const create = document.getElementById("create-room")
 const title = document.getElementById("title")
-const BASE_SERVER_URL = "http://localhost:3300"
+const BASE_SERVER_URL = "https://video-chat-server-zbmb.onrender.com"
 
 const urlParams = new URLSearchParams(window.location.search)
 const type = urlParams.get("type") || "videochat"  //remove later 
@@ -31,7 +31,7 @@ create.addEventListener("click", () => {
             const res = await request.json() //ok:true
             if (res.ok) {
                 if (type == "message") {
-                    window.location.href = `#`
+                    window.location.href = `./chat.html?type=${type}&roomID=${room}`
                 } else if (type == "videochat") {
                     window.location.href = `./videochat.html?type=${type}&roomID=${room}`
                 }
@@ -92,7 +92,7 @@ joinRoom.addEventListener("click", () => {
             const response = await request.json();
             if (response.ok) {
                 if (type == "message") {
-                    window.location.href = `./message.html?type=${type}&roomID=${roomID}`;
+                    window.location.href = `./chat.html?type=${type}&roomID=${roomID}`;
 
                 } else if (type == "videochat") {
 
