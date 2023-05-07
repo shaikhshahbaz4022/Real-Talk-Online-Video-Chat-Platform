@@ -1,12 +1,18 @@
-const socket = io('http://localhost:8000/,',{transports:["websocket"]});
-
-
-const form = document.getElementById('send-container');
-const messageInput = document.getElementById('messageInp');
-const messageContainer = document.querySelector('.container');
+console.log("connected");
 
 
 
 
-const naam = prompt('Enter your name to join');
-socket.emit('new-user-joined', naam);
+
+
+
+const socket = io("http://localhost:5000/",{transports:["websocket"]});
+
+
+socket.emit("joinRoom", ({ username, room }));
+
+socket.on("message", (message) => {
+
+    outputMessage(message);
+
+})
