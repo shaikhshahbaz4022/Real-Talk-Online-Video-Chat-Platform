@@ -1,4 +1,4 @@
-const BASE_SERVER_URL = "http://localhost:3300"
+const BASE_SERVER_URL = "https://video-chat-server-zbmb.onrender.com"
 //******************    ******************//
 new AWN().asyncBlock(
     fetch(`${BASE_SERVER_URL}/start`),
