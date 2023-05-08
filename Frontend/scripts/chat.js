@@ -7,8 +7,8 @@ const urlParams = new URLSearchParams(window.location.search)
 
 const room = urlParams.get("roomID");
 console.log(room);
-// const username = JSON.parse(localStorage.getItem("userDetails")).name;
-const username = "Aman"
+const username = JSON.parse(localStorage.getItem("userDetails")).name;
+// const username = "Aman"
 
 
 const socket = io("https://real-talk-chat-server.onrender.com/", { transports: ["websocket"] });

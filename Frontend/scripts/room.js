@@ -4,7 +4,7 @@ const title = document.getElementById("title")
 const BASE_SERVER_URL = "https://video-chat-server-zbmb.onrender.com"
 
 const urlParams = new URLSearchParams(window.location.search)
-const type = urlParams.get("type") || "videochat"  //remove later 
+const type = urlParams.get("type"); //remove later 
 
 if (type == "message") {
     title.innerText = `Real Talk Chat Platform`
