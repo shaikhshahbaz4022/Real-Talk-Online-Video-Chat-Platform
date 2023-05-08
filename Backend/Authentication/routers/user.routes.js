@@ -18,23 +18,49 @@ userrouter.post("/sign", async (req, res) => {
     const auser = await usermodel.findOne({ email });
 
     if (auser) {
-      res.send({ "ok": false, "msg": "User Already exist" });
-    } else {
-      bcrypt.hash(password, 5, async (err, hash) => {
-        if (err) {
-          res.send({"ok":false, "err": "Something went wrong while hashing" });
-        }
-
-        const user = new usermodel({ name, email, password: hash });
-        await user.save();
-
-        res.send({"ok":true ,"msg": "Registration Successfull" });
-      });
+     return res.send({ "ok": false, "msg": "User Already exist" });
+    } else{
+      const hash = bcrypt.hashSync(password,3);
+      const user =await new usermodel({ name, email, password: hash });
+         await user.save(); 
+         res.send({"ok":true ,"msg": "Registration Successfull" }); 
     }
+  //   //else {
+    //  const hash =  bcrypt.hashSync(password, 5); 
+    //     // if (err) {
+    //     //    res.send({"ok":false, "err": "Something went wrong while hashing" });
+    //     //  }
+         
+    //     const user = new usermodel({ name, email, password: hash });
+    //     await user.save(); 
+         
 
+
+    //     res.send({"ok":true ,"msg": "Registration Successfull" }); 
+         
+    // });
+    
+  
   } catch (err) {
     res.send({ mes: err.message });
-  }
+  } 
+//   try {
+//     const {name,email,password}=req.body;
+//     const isUserPresent = await usermodel.findOne({email});
+//     if(isUserPresent) return res.status(200).send("User already exists! Please Login!")
+
+//     const hash = await bcrypt.hash(password,3);
+
+//     const newUser = new usermodel({name,email,password:hash});
+
+//     await newUser.save();
+
+//     res.status(200).send("SignUp Sucessful")
+
+    
+// } catch (error) {
+//     res.status(400).send({"msg":error.message})
+// }
 });
 
 
@@ -57,7 +83,7 @@ userrouter.post("/login", async (req, res) => {
 
           res.send({
             "ok":true,
-            "mes": "login successfully",
+            "msg": "login successfully",
             "user_details": { name: user.name, email: user.email },
             "token": token
           });
@@ -74,8 +100,9 @@ userrouter.post("/login", async (req, res) => {
 
 userrouter.post("/logout", async(req,res)=>{
   try {
-    const { token } = req.body;
+    const token  = req.headers.authorization;
     await client.set(`${token}`,`${true}`);
+    
     await client.expire(`${token}`, 60*60);
 
     res.send({"ok":true, "msg":"Logout Successfull"});

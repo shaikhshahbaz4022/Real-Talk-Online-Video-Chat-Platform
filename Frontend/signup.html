@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Register</title>
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -13,7 +13,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/c8626bb222.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c8626bb222.js" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
 </head>
 <body>
   <main id="main">
@@ -30,8 +31,8 @@
             <h2>Get started.</h2>
             <p>Already have an account? <a href="./login.html">Log in</a></p>
             <div class="sign-up-buttons">
-              <button id="sign-up"><img src="./images/google-icon.png"> Sign up with Google</button>
-              <button id="sign-up-facebook"><img src="./images/icons8-github-30.png" width="20px"> Sign up with Github</button>
+              <a href="http://localhost:8080/auth/google" class="btn btn-danger"><button id="sign-up"><img src="./images/google-icon.png"> Sign up with Google</button></a>
+              <a href="https://github.com/login/oauth/authorize?client_id=7985eda3cc93ebd0ce4a&scope=user:email"><button id="sign-up-facebook"><img src="./images/icons8-github-30.png" width="20px"> Sign up with Github</button></a>
             </div>
             <p class="socials-divider"><span>or</span></p>
 
@@ -50,7 +51,7 @@
 
               <div class="password-input-container">
                 <i class="fi fi-rr-lock icon-password"></i>
-                <input type="password" name="password" placeholder="Your password" id="password">
+                <input type="password" name="password" placeholder="Your password" id="pass">
               </div>
 
             </form>
@@ -64,11 +65,11 @@
             </div>
 
             <button id="register-button" type="submit">Register</button>
-            <!-- <p class="credits">Made with ❤️ by <a href="https://github.com/aluizamendes" target="_blank">aluizamendes</a></p> -->
           </div>
         </div>    
       </div>
     </div>
   </main>
 </body>
-</html>
+</html> 
+<script src="./scripts/signup.js"></script>
