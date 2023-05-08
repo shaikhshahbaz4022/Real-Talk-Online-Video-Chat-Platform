@@ -16,6 +16,7 @@
 .box-container{
     display: flex;
     width:860px;
+    /* width: 65%; */
     height:530px;
     background:#fff;
     border-radius: 10px;
@@ -140,3 +141,19 @@
     height:18px;
     margin-bottom: -3px;
 }
+
+
+@media only screen and (max-width: 768px) {
+
+    .img-box {
+        display: none;
+    }
+
+    .login-with img{
+        display: block;
+    }
+    .main-wrap {
+    background: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=1060&t=st=1683531577~exp=1683532177~hmac=3f29594210bf9ea27a641d63a598f0d88c473ab4e5ccc66c884074af16a9ecc3")
+
+    }
+  }
