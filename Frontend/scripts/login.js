@@ -28,7 +28,7 @@ login.addEventListener("click", (e) => {
   };
 
 
-  fetch(`${url}/user/login`, {
+  fetch(`http://localhost:8080/user/login`, {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -60,8 +60,8 @@ login.addEventListener("click", (e) => {
           text: res.msg,
         });
 
-        hideLoader();
-        document.getElementById("login").style.visibility = "visible";
+        //hideLoader();
+        //document.getElementById("login").style.visibility = "visible";
       }
 
     })
