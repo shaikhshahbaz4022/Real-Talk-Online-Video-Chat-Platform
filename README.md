@@ -46,15 +46,6 @@ It includes features that allows user to chat, video call, screen share with eac
 
  ## Application Guide to use features
 
- ### To use {Screen share} feature -->
--  First Create room 
--  User can share the screen
--  User can join the room using room ID
--  Enter room ID to join 
-
-#### Stop share -->
-- Click on stop share option 
-
 ### To use {Video calling} feature -->
 -  First Create room 
 -  User can join the call by using the room ID
@@ -127,10 +118,6 @@ module.exports = { RoomRouter }
  GitHub: https://github.com/shaikhshahbaz4022/chummy-run-6992
 
 <br>
-
-## Complete Work-flow of RealTalk
-
-![work-flow](https://user-images.githubusercontent.com/115463536/229331910-ba9200c8-7d65-4c98-b4a1-3f921088107b.jpg)
 
 ## Home Page
 ![Screenshot (207)](https://user-images.githubusercontent.com/115460646/236783540-9cb13e9b-2ca0-4f0a-8c97-2a3d08eaa121.png)
