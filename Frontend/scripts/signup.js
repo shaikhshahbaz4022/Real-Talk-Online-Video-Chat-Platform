@@ -1,5 +1,5 @@
 
-const url = "http://localhost:8080";
+const url = "https://nice-lime-elephant-hat.cyclic.app";
 
 let signbtn = document.getElementById("register-button");
 signbtn.addEventListener("click", (e) => {
@@ -33,7 +33,7 @@ else{
     password: pass,
   };
 
-  fetch(`${url}/user/sign`, {
+  fetch(`${url}/user/register`, {
     method: "POST",
     body: JSON.stringify(signdata),
     headers: {
@@ -47,7 +47,7 @@ else{
       document.getElementById("email").value = "";
       document.getElementById("pass").value = "";
    
-      if (res.ok) {
+      if (res.msg === "Registration Succesfull") {
         Swal.fire(
             'Registration Successfull',
             '',
