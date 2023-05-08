@@ -142,7 +142,15 @@
     margin-bottom: -3px;
 }
 
+.main-wrap {
+  background-image: url("https://img.freepik.com/premium-photo/blue-paper-with-white-background_839976-213.jpg?w=1060");
+  /* width: 75%; */
+}
 
+.box-container {
+    width: 75%;
+    height: 80%;
+}
 @media only screen and (max-width: 768px) {
 
     .img-box {
