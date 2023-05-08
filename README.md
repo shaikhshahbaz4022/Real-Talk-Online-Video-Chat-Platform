@@ -115,12 +115,12 @@ module.exports = { RoomRouter }
 
 
 3. Aman Kashyap
-   >    - e-Mail: @gmail.com
+   >    - e-Mail: aman1722kashyap@gmail.com
    >    - GitHub: https://github.com/Aman1722
 
 
 4. Haroon Hussain
-   >    - e-Mail: @gmail.com
+   >    - e-Mail: haroonhussain97@gmail.com
    >    - GitHub: https://github.com/mdharoonhussain 
 
 
