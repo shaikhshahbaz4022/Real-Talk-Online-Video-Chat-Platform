@@ -1,0 +1,82 @@
+
+const url = "http://localhost:8080";
+
+let signbtn = document.getElementById("register-button");
+signbtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let pass = document.getElementById("pass").value;
+  console.log(name,email,pass)
+  if(!name || !pass || !email){
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Fields can't be empty",
+    });
+  } 
+  else if(pass.length!=4){
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Password should be of 4 digit",
+      });
+  }
+
+  // Loader Showing
+  //showLoader();
+  //document.getElementById("register-button").style.visibility = "hidden";
+else{
+  let signdata = {
+    name: name,
+    email: email,
+    password: pass,
+  };
+
+  fetch(`${url}/user/sign`, {
+    method: "POST",
+    body: JSON.stringify(signdata),
+    headers: {
+      "Content-type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((res) => { 
+      console.log(res)
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("pass").value = "";
+   
+      if (res.ok) {
+        Swal.fire(
+            'Registration Successfull',
+            '',
+            'success'
+          )
+        // Transfer to login page here
+        setTimeout(()=>{
+          window.location.href ="./login.html";
+        },2500)
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: res.msg,
+        });
+
+        //hideLoader();
+        //document.getElementById("register-button").style.visibility = "visible";
+      } 
+    })
+    .catch((err) => {
+      console.log(err);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: err.message,
+      });
+      //hideLoader();
+      //document.getElementById("register-button").style.visibility = "visible";
+    }); 
+  }
+});
