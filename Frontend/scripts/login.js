@@ -1,4 +1,4 @@
-const url = "https://realtalk-xptc.onrender.com";
+const url = "https://nice-lime-elephant-hat.cyclic.app";
 
 // login script is  start hare
 let login = document.getElementById("login");
@@ -38,20 +38,23 @@ login.addEventListener("click", (e) => {
     .then((res) => res.json())
 
     .then((res) => {
-
+      console.log(res);
       document.getElementById("lemail").value = "";
       document.getElementById("lpass").value = "";
-      if (res.ok) {
+      if (res.msg === "login success") {
         Swal.fire(
 
           'Login Successfull',
           '',
           'success'
         )
-        localStorage.setItem("userDetails", JSON.stringify(res.user_details));
+        localStorage.setItem("userDetails", JSON.stringify(res.user));
         localStorage.setItem("token", res.token);
         localStorage.setItem("signedIn",true)
-        window.location.href = "./dashboard.html";
+        setTimeout(()=>{
+          window.location.href = "./index.html";
+        },2000)
+        
 
       } else {
         Swal.fire({
@@ -60,7 +63,7 @@ login.addEventListener("click", (e) => {
           text: res.msg,
         });
 
-        hideLoader();
+        // hideLoader();
         document.getElementById("login").style.visibility = "visible";
       }
 
@@ -72,7 +75,7 @@ login.addEventListener("click", (e) => {
         title: "Oops...",
         text: err.message,
       });
-      //hideLoader();
+      // hideLoader();
       //document.getElementById("login").style.visibility = "visible";
     });
 });
