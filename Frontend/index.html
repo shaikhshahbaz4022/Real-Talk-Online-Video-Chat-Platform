@@ -30,9 +30,9 @@
           <li>
             <a href="#"><b>Real Talk</b></a>
           </li>
-          <li><a href="./dashboard.html">Dashboard</a></li>
-          <li><a href="./room.html">Real Talk Video Call</a></li>
-          <li><a href="./chat.html">Real Talk Chat</a></li>
+          <li><a id="dash" href="#">Dashboard</a></li>
+          <li><a id="video" href="#">Real Talk Video Call</a></li>
+          <li><a  id="chat" href="#">Real Talk Chat</a></li>
           <li><a href="#">Features</a></li>
           <li>
             <a href="#">Products</a>
@@ -58,7 +58,7 @@
       <div class="sign-in" id="sign-in-2">
         <ul>
           <li id="logout"><a href="#">Host a meeting</a></li>
-          <li id="dom-manipulation">
+          <li class="dom-manipulation">
             <a href="#">Sign In</a>
             <ul>
               <li><a href="#">My account</a></li>
@@ -258,7 +258,7 @@
 </html>
 
 <script>
-  const logout = document.getElementById("dom-manipulation");
+  const logout = document.querySelector(".dom-manipulation");
   // dom-manipulation-logout
   const full_name = document.getElementById("logout");
   // full-name-username
@@ -268,6 +268,10 @@
   const token = localStorage.getItem("token");
   console.log(token);
   console.log(data);
+
+  const dashboardbtn = document.getElementById("dash");
+  const videodbtn = document.getElementById("video");
+  const chatbtn = document.getElementById("chat");
 
   if(data) {
     full_name.textContent = `Hi ! ${data.name}`;
@@ -292,10 +296,7 @@
     logout.style.cursor = "pointer";
     // logout.style.fontSize = "60px";
     // logout.style.padding = "10px";
-
-  } 
-
-  logout.addEventListener("click",async()=>{
+    logout.addEventListener("click",async()=>{
    try{
      fetch(`https://nice-lime-elephant-hat.cyclic.app/user/logout`,
      {
@@ -314,7 +315,6 @@
           'success'
         )
      })
-     
      setTimeout(() => {
       window.location.reload();
      }, 2000);
@@ -322,4 +322,18 @@
      console.log(err);
    }
   })
+  } 
+
+  if(token){
+    dashboardbtn.addEventListener("click",()=>{
+      window.location.href="./dashboard.html"
+    })
+    videodbtn.addEventListener("click",()=>{
+      window.location.href="./room.html?type=videochat"
+    })
+    chatbtn.addEventListener("click",()=>{
+      window.location.href="./room.html?type=message"
+    })
+  }
+
 </script>
