@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Real Talk</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
@@ -28,42 +30,42 @@
           <li>
             <a href="#"><b>Real Talk</b></a>
           </li>
-          <li><a href="#">Downloads</a></li>
-          <li><a href="#">Skype To Phone</a></li>
-          <li><a href="#">Skype Number</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <li><a href="./room.html">Real Talk Video Call</a></li>
+          <li><a href="./chat.html">Real Talk Chat</a></li>
           <li><a href="#">Features</a></li>
           <li>
             <a href="#">Products</a>
             <ul>
               <li><a href="#">Meet Now</a></li>
-              <li><a href="#">Skype Manager</a></li>
-              <li><a href="#">Skype With Alexa</a></li>
-              <li><a href="#">Skype for content creators</a></li>
-              <li><a href="#">Skype for business</a></li>
+              <li><a href="#">Real Talk Manager</a></li>
+              <li><a href="#">Real Talk With Alexa</a></li>
+              <li><a href="#">Real Talk for content creators</a></li>
+              <li><a href="#">Real Talk for business</a></li>
             </ul>
           </li>
           <li>
             <a href="#">Get Help</a>
             <ul>
-              <li><a href="#">Skype Support</a></li>
+              <li><a href="#">Real Talk Support</a></li>
               <li><a href="#">Blogs</a></li>
               <li><a href="#">Community</a></li>
-              <li><a href="#">About Skype</a></li>
+              <li><a href="#">About Real Talk</a></li>
             </ul>
           </li>
         </ul>
       </div>
-      <div class="sign-in">
+      <div class="sign-in" id="sign-in-2">
         <ul>
-          <li><a href="#">Host a meeting</a></li>
-          <li>
+          <li id="logout"><a href="#">Host a meeting</a></li>
+          <li id="dom-manipulation">
             <a href="#">Sign In</a>
             <ul>
               <li><a href="#">My account</a></li>
-              <li><a href="#">Use Skype Online</a></li>
+              <li><a href="#">Use Real Talk Online</a></li>
               <li>
                 <a href="./signup.html"
-                  >New to Skype? <span>Sign Up</span></a
+                  >New to Real Talk? <span>Sign Up</span></a
                 >
               </li>
             </ul>
@@ -80,13 +82,13 @@
       <div class="mid-1">
         <h1>Introducing the new Bing <span>in Real Talk</span></h1>
         <h2>
-          Ready to supercharge your chats? Bing in Skype can help you get
+          Ready to supercharge your chats? Bing in Real Talk can help you get
           answers, creative ideas or summaries in chat, anytime, anywhere.
           <a href="#">Learn More</a>
         </h2>
         <a href="#"><button>Download Real Talk</button></a>
         <div class="last">
-          <a href="#">Open Skype in your browser</a>
+          <a href="#">Open Real Talk in your browser</a>
         </div>
       </div>
       <div class="mid-2">
@@ -107,9 +109,9 @@
           src="https://secure.skypeassets.com/content/dam/scom/blogs/skype-bot-collab/share-thumbnail-3.png"
           alt="error"
         />
-        <h3><b>Get social with the new Bing in Skype</b></h3>
+        <h3><b>Get social with the new Bing in Real Talk</b></h3>
         <p>
-          The new Bing in Skype is your AI-powered copilot, and can provide
+          The new Bing in Real Talk is your AI-powered copilot, and can provide
           helpful answers to your questions. Whether you need a quick answer or
           something more in-depth, Bing uses the latest advancements in AI
           technology to provide you with the most real-time answers and
@@ -124,8 +126,8 @@
         />
         <h3><b>​Want to be the hero on your next call? 🦸</b></h3>
         <p>
-          Did you know Skype Bing mashup happened? Here are the results - a
-          unique high-quality background images in your Skype calls! And that's
+          Did you know Real Talk Bing mashup happened? Here are the results - a
+          unique high-quality background images in your Real Talk calls! And that's
           not all, you can now kill time by searching up the image and exploring
           more about the beautiful scenery and places you see on your
           background!
@@ -139,13 +141,13 @@
         />
         <h3>
           <b
-            >Your chats are about to get much better, Skype's new and improved
+            >Your chats are about to get much better, Real Talk's new and improved
             messaging is here!</b
           >
         </h3>
         <p>
           Last month we revealed our big plans for an improved, faster,
-          reliable, and super modern-looking Skype. Now we're making good on our
+          reliable, and super modern-looking Real Talk. Now we're making good on our
           promise by rolling out the first of the new upgrades.
         </p>
         <a href="#">Learn more ></a>
@@ -155,9 +157,9 @@
           src="https://secure.skypeassets.com/content/dam/scom/blogs/evergreen/home-page-tab-template.jpg"
           alt="error"
         />
-        <h3><b>Preserving the connections that matter most with Skype</b></h3>
+        <h3><b>Preserving the connections that matter most with Real Talk</b></h3>
         <p>
-          And thanks to Skype, it’s also never been easier. Here’s how people
+          And thanks to Real Talk, it’s also never been easier. Here’s how people
           across the globe used technology to stay connected through it all.
         </p>
         <a href="#">Learn more ></a>
@@ -254,3 +256,70 @@
     </div>
   </body>
 </html>
+
+<script>
+  const logout = document.getElementById("dom-manipulation");
+  // dom-manipulation-logout
+  const full_name = document.getElementById("logout");
+  // full-name-username
+  const signin = document.getElementById("sign-in-2");
+
+  const data = JSON.parse(localStorage.getItem("userDetails")) || null;
+  const token = localStorage.getItem("token");
+  console.log(token);
+  console.log(data);
+
+  if(data) {
+    full_name.textContent = `Hi ! ${data.name}`;
+    full_name.style.marginTop = "7px";
+    full_name.style.fontWeight = "bolder";
+    full_name.style.cursor = "pointer";
+    full_name.style.fontSize = "16px";
+    full_name.style.marginRight = "30px";
+    full_name.style.marginBottom = "3px";
+    // signin.style.border = "2px solid red";
+    signin.style.padding = "10px 10px";
+    signin.style.justifyContent = "center";
+    signin.style.marginBottom = "3px";
+    signin.style.boxShadow = "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px";
+
+    signin.style.borderRadius = "5px";
+    signin.style.backgroundColor = "#eee";
+    // full_name.style.border = "2px solid red";
+    full_name.style.width = "100px";
+    logout.textContent = "Logout";
+    logout.style.marginTop = "7px";
+    logout.style.cursor = "pointer";
+    // logout.style.fontSize = "60px";
+    // logout.style.padding = "10px";
+
+  } 
+
+  logout.addEventListener("click",async()=>{
+   try{
+     fetch(`https://nice-lime-elephant-hat.cyclic.app/user/logout`,
+     {
+      method: "POST",
+      headers : {
+        "content-type" : "application/json",
+        "Authorization": `${token}`
+      }
+     }
+     ).then(res=> res.json())
+     .then(data => {
+      localStorage.clear();
+      Swal.fire(
+          `${data.msg}`,
+          '',
+          'success'
+        )
+     })
+     
+     setTimeout(() => {
+      window.location.reload();
+     }, 2000);
+   } catch(err){
+     console.log(err);
+   }
+  })
+</script>

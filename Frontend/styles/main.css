@@ -12,6 +12,9 @@ html {
   margin: auto;
   /* margin-top: 4%; */
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: #ffffff;
+  /* height: 60vh; */
+
   /* border: 2px solid red; */
   /* height: 70vh; */
 }
