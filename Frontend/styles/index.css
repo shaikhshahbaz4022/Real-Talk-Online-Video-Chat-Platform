@@ -43,7 +43,9 @@ body {
     display: block;
     /* color: #fff; */
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 5px;
+    /* border: 2px solid red; */
+    font-size: 13px;
   }
   
   .nav-menu ul li:hover > ul {
@@ -102,6 +104,9 @@ body {
     /* color: #fff; */
     text-decoration: none;
     padding: 10px 20px;
+    /* border: 2px solid red; */
+    font-size: 13px;
+    width: 130%;
   }
   
   .sign-in ul li:hover > ul {
@@ -207,6 +212,7 @@ body {
    background-color: #eee;
    display: flex;
    border-radius: 20px;
+   margin-top: 20px;
 }
 
 .mid-1 {
@@ -424,3 +430,31 @@ body {
   font-size: 12px;
   margin-right: 30px;
 }
+
+
+/* media-query-start */
+
+/* For screens smaller than 600px */
+@media only screen and (max-width: 768px) {
+  /* CSS styles go here */
+ #navbar {
+  display: none;
+ }
+ #mid-third {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ }
+}
+
+#footer tr{
+  box-sizing: inherit;
+}
+
+#mid {
+ box-sizing: inherit;
+}
+
+
+
+
+/* media-query-end */

@@ -16,6 +16,7 @@ body {
   'GRAD' 0,
   'opsz' 48, */
   margin-left: 10px;
+  cursor: pointer;
 }
 
 #example-input {
@@ -408,3 +409,20 @@ body {
     margin-top: 10px;
     color: rgb(105, 158, 228);
 }
+
+
+/* media-query-start */
+
+@media only screen and (max-width: 768px) {
+
+    #name, #myDropdown, #search, #all-icon, #last-mail, #recent-chats{
+        display: none;
+    }
+
+    .sections {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+/* media-query-end */
