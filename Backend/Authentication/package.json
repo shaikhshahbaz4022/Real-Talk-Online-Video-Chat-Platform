@@ -27,9 +27,12 @@
     "express-session": "^1.17.3",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.1.0",
+    "nodemon": "^2.0.22",
     "passport": "^0.6.0",
     "passport-google-oauth": "^2.0.0",
     "passport-google-oauth20": "^2.0.0",
+    "redis": "^4.6.6",
+    "sweetalert2": "^11.4.8",
     "uuid": "^9.0.0"
   }
 }

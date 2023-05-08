@@ -27,7 +27,7 @@ authRoute.get('/auth/google/success', (req, res) => {
   console.log("dashboard") 
   console.log(userProfile)  
   res.send(userProfile)
-  res.redirect("")
+  //res.redirect("")
  // res.send(userProfile)
   //res.sendFile(__dirname+ "C:\Users\Dell\Desktop\chummy-run-6992\Backend\Authentication\view\dashboard.html") 
   //res.send("successfully login",userProfile) 
@@ -62,7 +62,7 @@ passport.use(
 
 authRoute.get('/auth/github/success', (req, res) => {
   console.log("dashboard")
-  res.sendFile(__dirname+ "/../view/dashboard.html")
+  res.sendFile(__dirname+ "/../Frontend/index.html")
   
 })
 
@@ -92,7 +92,9 @@ authRoute.get("/auth/github", async (req, res) => {
   })
     .then((res) => res.json());
   console.log(user);
-  res.send("Authentication successfull");
+  //res.redirect("../Frontend/index.html")
+ res.send("Authentication successfull"); 
+
 })
 
 
