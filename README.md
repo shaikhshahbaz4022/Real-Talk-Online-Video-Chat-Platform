@@ -1,6 +1,5 @@
 # chummy-run-6992 
-![icon](![real talk](https://user-images.githubusercontent.com/115460646/236768222-bd440a54-94e4-4e50-83a3-e14f5fda1fe0.png)
-)
+(![real talk](https://user-images.githubusercontent.com/115460646/236768222-bd440a54-94e4-4e50-83a3-e14f5fda1fe0.png)
 
 # RealTalk - Real Time Screen Sharing  Chat Application
 
@@ -134,15 +133,20 @@ module.exports = { RoomRouter }
 ![work-flow](https://user-images.githubusercontent.com/115463536/229331910-ba9200c8-7d65-4c98-b4a1-3f921088107b.jpg)
 
 ## Home Page
-![home page](https://user-images.githubusercontent.com/112820391/229371183-24ec49f9-2dc6-41e5-bb21-0f340f8dec72.PNG)
+![HomePage](https://user-images.githubusercontent.com/115460646/236769738-7db39f2e-3689-4be8-9982-424f3270f9f4.png)
+
 ## Footer Page
-![ooter page](https://user-images.githubusercontent.com/112820391/229371197-2fe56e7e-ff79-46ce-bccd-ad6c84c10ab7.PNG)
+![Footer](https://user-images.githubusercontent.com/115460646/236770024-990b7fb2-39ea-45ce-b1fb-4237b92cd0f7.png)
+
 ## Signing Page
-![sigin page](https://user-images.githubusercontent.com/112820391/229371204-bb79974c-4d59-42a5-824c-49f884a4d860.PNG)
+![Screenshot (144)](https://user-images.githubusercontent.com/115460646/236770230-0bee2292-a907-42ed-b2dd-5b115ddfe243.png)
+
 ## Login Page
-![login page](https://user-images.githubusercontent.com/112820391/229371208-37d675ae-2f72-4b28-9951-3de7c3044118.PNG)
+![Screenshot (145)](https://user-images.githubusercontent.com/115460646/236770453-e7bbc290-9095-4bc9-89e9-2ad862477d6d.png)
+
 ## Dashboard Page
-![dashboard page](https://user-images.githubusercontent.com/112820391/229371233-bea4c2b8-75d7-4b2b-b6e1-e95bc52a4093.PNG)
+![Screenshot (146)](https://user-images.githubusercontent.com/115460646/236770601-c56f9f9e-a48f-4277-81af-e7df3e9ad055.png)
+
 ## Video Chat Platform
-![video chat platform](https://user-images.githubusercontent.com/112820391/229371247-f2d3b3a3-7dff-40cb-9c2e-6770234979d1.PNG)
+
 
