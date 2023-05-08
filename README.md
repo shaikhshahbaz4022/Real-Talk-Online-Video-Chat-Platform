@@ -133,7 +133,8 @@ module.exports = { RoomRouter }
 ![work-flow](https://user-images.githubusercontent.com/115463536/229331910-ba9200c8-7d65-4c98-b4a1-3f921088107b.jpg)
 
 ## Home Page
-![HomePage](https://user-images.githubusercontent.com/115460646/236769738-7db39f2e-3689-4be8-9982-424f3270f9f4.png)
+![Screenshot (207)](https://user-images.githubusercontent.com/115460646/236783540-9cb13e9b-2ca0-4f0a-8c97-2a3d08eaa121.png)
+
 
 ## Footer Page
 ![Footer](https://user-images.githubusercontent.com/115460646/236770024-990b7fb2-39ea-45ce-b1fb-4237b92cd0f7.png)
@@ -145,8 +146,11 @@ module.exports = { RoomRouter }
 ![Screenshot (145)](https://user-images.githubusercontent.com/115460646/236770453-e7bbc290-9095-4bc9-89e9-2ad862477d6d.png)
 
 ## Dashboard Page
-![Screenshot (146)](https://user-images.githubusercontent.com/115460646/236770601-c56f9f9e-a48f-4277-81af-e7df3e9ad055.png)
+![Screenshot (206)](https://user-images.githubusercontent.com/115460646/236783304-c3b9ae9f-65f6-4d8e-bff4-b7a5eba406fc.png)
 
-## Video Chat Platform
+
+## Video Chat Platform 
+![Screenshot (208)](https://user-images.githubusercontent.com/115460646/236784083-8eab643c-efc9-4b12-836c-8fd058832aae.png)
+
 
 
