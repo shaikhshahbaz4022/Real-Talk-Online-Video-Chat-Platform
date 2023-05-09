@@ -1,4 +1,4 @@
-# chummy-run-6992 
+# Real Talk Online Chat Platform
 ![real talk](https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237085721-15be1142-35b3-4608-a547-9a8b1528b2a3.png)
 
 # RealTalk - Real Time Screen Sharing  Chat Application
