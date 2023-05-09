@@ -1,12 +1,12 @@
 # chummy-run-6992 
-(![real talk](https://user-images.githubusercontent.com/115460646/236768222-bd440a54-94e4-4e50-83a3-e14f5fda1fe0.png)
+![real talk](https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237085721-15be1142-35b3-4608-a547-9a8b1528b2a3.png)
 
 # RealTalk - Real Time Screen Sharing  Chat Application
 
 **RealTalk is a communications platform that allows users to connect with video, audio, screen share, and chat.**
 **The power of collaboration is that it can turn a group of individuals into a team empowered to achieve great things
 RealTalk is a type of application that enables users to share their computer screens with others in real-time over the internet. 
-It includes features that allows user to chat, video call, screen share with each other.**
+It includes features that allows user to chat and video call with each other.**
 
 ## Deployment Link - <!--Netlify link-->
 
@@ -33,14 +33,13 @@ It includes features that allows user to chat, video call, screen share with eac
 ## Backend Part
 - Authentication using JWT
 - implementation using Socket.io
-- fully functional Video, Audio and Screen Share icons
+- fully functional Video and  Audio icons
 
 ## Database  
  - MongoDB
  - Redis
 
 ## Features 
- -  Screen Sharing 
  -  Chatting 
  -  Video Calling
 
@@ -90,7 +89,7 @@ const RoomRouter = express.Router()
     }
 })
 
-module.exports = { RoomRouter }
+
 ```
 
 ## Group Members Info
@@ -100,17 +99,12 @@ module.exports = { RoomRouter }
    >    - GitHub: https://github.com/shaikhshahbaz4022
 
 
-2. Bhavya Khatri
-   >    - e-Mail: dnd88778@gmail.com
-   >    - GitHub: https://github.com/Bhavya022 
-
-
-3. Aman Kashyap
+2. Aman Kashyap
    >    - e-Mail: aman1722kashyap@gmail.com
    >    - GitHub: https://github.com/Aman1722
 
 
-4. Haroon Hussain
+3. MD Haroon Hussain
    >    - e-Mail: haroonhussain97@gmail.com
    >    - GitHub: https://github.com/mdharoonhussain 
 
@@ -120,24 +114,42 @@ module.exports = { RoomRouter }
 <br>
 
 ## Home Page
-![Screenshot (207)](https://user-images.githubusercontent.com/115460646/236783540-9cb13e9b-2ca0-4f0a-8c97-2a3d08eaa121.png)
+![Screenshot (719)](https://github.com/shaikhshahbaz4022/chummy-run-6992/assets/119395145/538016b3-9a1f-44fb-a536-9f50932128f8)
 
 
 ## Footer Page
+
 ![Footer](https://user-images.githubusercontent.com/115460646/236770024-990b7fb2-39ea-45ce-b1fb-4237b92cd0f7.png)
 
 ## Signing Page
-![Screenshot (144)](https://user-images.githubusercontent.com/115460646/236770230-0bee2292-a907-42ed-b2dd-5b115ddfe243.png)
+
+![Screenshot (722)](https://github.com/shaikhshahbaz4022/chummy-run-6992/assets/119395145/92d48953-cc89-427e-9210-4bdca255b3e4)
+
 
 ## Login Page
-![Screenshot (145)](https://user-images.githubusercontent.com/115460646/236770453-e7bbc290-9095-4bc9-89e9-2ad862477d6d.png)
+
+![Screenshot (145)](https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237143981-2d97066b-1b9a-4200-b8da-c49adbbe6138.png)
 
 ## Dashboard Page
-![Screenshot (206)](https://user-images.githubusercontent.com/115460646/236783304-c3b9ae9f-65f6-4d8e-bff4-b7a5eba406fc.png)
+
+![Screenshot (206)](https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237143138-948c2008-1de3-4547-8a1e-180ec1761a89.png)
 
 
-## Video Chat Platform 
+## Room Platform 
+
 ![Screenshot (208)](https://user-images.githubusercontent.com/115460646/236784083-8eab643c-efc9-4b12-836c-8fd058832aae.png)
+
+
+## Video Chat Platform
+
+![Screenshot (713)](https://github.com/shaikhshahbaz4022/chummy-run-6992/assets/119395145/c376c5a2-257c-4853-a1c0-11fbbb3b2a9e)
+
+## Chat Platform
+
+![Screenshot (710)](https://github.com/shaikhshahbaz4022/chummy-run-6992/assets/119395145/fbd85239-b154-44fe-b2ae-2fc74a6ac652)
+
+
+
 
 
 
