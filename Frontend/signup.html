@@ -135,9 +135,9 @@
   // google Oauth ----------------------->
   googleBtn.addEventListener("click", async () => {
     try {
-      window.location.href = googleUrl;
+    
 
-      const cookies = document.cookie.split(";");
+      const cookies =await document.cookie.split(";");
       for (let i = 0; i < cookies.length; i++) {
         const cookie = cookies[i].trim().split("=");
         const name = cookie[0];
@@ -147,9 +147,10 @@
         const data = decodeURIComponent(value);
         const userInfoObj = JSON.parse(data);
         // console.log(userInfoObj.name);
-        localStorage.setItem("userDetails", JSON.stringify(userInfoObj));
-        localStorage.setItem("token", userInfoObj.accessToken);
-        localStorage.setItem("signedIn",true)
+        await localStorage.setItem("userDetails", JSON.stringify(userInfoObj));
+        await localStorage.setItem("token", userInfoObj.accessToken);
+        await localStorage.setItem("signedIn",true);
+        window.location.href = googleUrl;
       }
     } catch (error) {
       console.log(error.message);
@@ -158,11 +159,11 @@
 
 
   ////// git hub OAuth------------------------>
-  githubBtn.addEventListener("click",()=>{
+  githubBtn.addEventListener("click",async()=>{
     try {
-      window.location.href = githubUrl;
+    
 
-      const cookies = document.cookie.split(";");
+      const cookies =await document.cookie.split(";");
       for (let i = 0; i < cookies.length; i++) {
         const cookie = cookies[i].trim().split("=");
         const name = cookie[0];
@@ -172,9 +173,11 @@
         const data = decodeURIComponent(value);
         const userInfoObj = JSON.parse(data);
         // console.log(userInfoObj.name);
-        localStorage.setItem("userDetails", JSON.stringify(userInfoObj));
-        localStorage.setItem("token", userInfoObj.accessToken);
-        localStorage.setItem("signedIn",true)
+       await localStorage.setItem("userDetails", JSON.stringify(userInfoObj));
+       await localStorage.setItem("token", userInfoObj.accessToken);
+       await localStorage.setItem("signedIn",true)
+
+        window.location.href = githubUrl;
       }
     } catch (error) {
       console.log(error.message);
