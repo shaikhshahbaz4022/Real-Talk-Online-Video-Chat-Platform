@@ -24,15 +24,16 @@ postRouter.get('/auth/google/callback',
 // })
 
 postRouter.get('/auth/google/success', (req, res) => {
-  const filePath = path.join(__dirname, '../Frontend/dashboard.html');
-  res.sendFile(filePath, (err) => {
-    if (err) {
-      console.log(err);
-      res.status(err.status).end();
-    } else {
-      console.log('File sent successfully');
-    }
-  });
+  // const filePath = path.join(__dirname, '../Frontend/dashboard.html');
+  // res.sendFile(filePath, (err) => {
+  //   if (err) {
+  //     console.log(err);
+  //     res.status(err.status).end();
+  //   } else {
+  //     console.log('File sent successfully');
+  //   }
+  // });
+  res.redirect("https://real-talk-online-chat.netlify.app/");
 });
 
 
