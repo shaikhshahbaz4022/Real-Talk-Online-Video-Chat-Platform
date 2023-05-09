@@ -88,6 +88,7 @@ const connectNewUser = (userID, stream) => {
 
     call.on('close', () => {
         video.remove()
+        
     })
 
     //Add to object whenever new user joins
