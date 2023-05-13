@@ -98,7 +98,6 @@ const RoomRouter = express.Router()
    >    - e-Mail: shaikhshahbaz4022@gmail.com
    >    - GitHub: https://github.com/shaikhshahbaz4022
 
-
 2. Aman Kashyap
    >    - e-Mail: aman1722kashyap@gmail.com
    >    - GitHub: https://github.com/Aman1722
