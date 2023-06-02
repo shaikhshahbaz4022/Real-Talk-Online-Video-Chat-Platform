@@ -59,7 +59,7 @@
     
      /* color: black; */
 }
-.form-wrap .signup-btn{
+/* .form-wrap .signup-btn{
     text-decoration: none;
     color: rgb(155, 152, 152);
     border: 1px solid rgb(182, 181, 181);
@@ -70,7 +70,7 @@
 }
 .form-wrap .signup-btn:hover{
     background-color: rgba(238, 238, 238, 0.527);
-}
+} */
 .form-wrap .mid-container{
     padding-top: 40px;
     padding-left: 40px;
@@ -157,7 +157,7 @@
 #lemail,#lpass{
     color: black;
 }
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 
     .img-box {
         display: none;
@@ -170,4 +170,169 @@
     background: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=1060&t=st=1683531577~exp=1683532177~hmac=3f29594210bf9ea27a641d63a598f0d88c473ab4e5ccc66c884074af16a9ecc3")
 
     }
+  } */
+
+  /* @media only screen and (max-width: 768px) {
+    .img-box {
+      display: none;
+    }
+  
+    .main-wrap {
+      background: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=1060&t=st=1683531577~exp=1683532177~hmac=3f29594210bf9ea27a641d63a598f0d88c473ab4e5ccc66c884074af16a9ecc3");
+    }
+  
+    .box-container {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+    }
+  
+    .form-wrap {
+      width: 100%;
+      padding: 20px 40px;
+    }
+  
+    .img-box img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .mid-container {
+      padding-top: 20px;
+      padding-left: 0;
+    }
+  
+    .mid-container .form input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px 8px;
+    }
+  
+    .top-signup {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    .signup-btn {
+      margin-top: 10px;
+      flex: 0 0 auto;
+    }
   }
+  
+  @media only screen and (max-width: 1024px) {
+    .box-container {
+      width: 90%;
+      height: auto;
+    }
+  }
+   */
+
+   @media only screen and (max-width: 768px) {
+    .img-box {
+      /* display: none; */
+      margin: auto;
+      width: 30%;
+    }
+  
+    .main-wrap {
+      
+        background: url("https://img.freepik.com/premium-photo/blue-paper-with-white-background_839976-213.jpg?w=1060");
+        width :auto;
+    }
+  
+    .box-container {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+    }
+  
+    .form-wrap {
+      width: 100%;
+      padding: 20px 40px;
+    }
+  
+    .img-box img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .mid-container {
+      padding-top: 20px;
+      padding-left: 0;
+    }
+  
+    .mid-container .form input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px 8px;
+      margin-bottom: 10px;
+    }
+  
+    .top-signup {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    /* .signup-btn {
+       
+      flex: 0 0 auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 70px;
+    } */
+    #lemail,#lpass{
+        color: black;
+        width: fit-content;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .box-container {
+      width: 90%;
+      height: auto;
+    }
+  }
+  .top-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .top-signup span {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .signup-btn {
+    padding: 8px 16px;
+    background-color: #0078ca;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background-color: #005c9a;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .top-signup {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+  
+    .signup-btn {
+      margin-top: 10px;
+    }
+  }
+  
