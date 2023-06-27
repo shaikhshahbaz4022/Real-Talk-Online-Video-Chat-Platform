@@ -101,11 +101,9 @@ setInterval(changeImage, 2000);
 let showname = document.getElementById("showname")
 
 const data = JSON.parse(localStorage.getItem("userDetails")) || null;
-console.log(data);
+// console.log(data);
 if (data) {
     showname.textContent = ` Mr. ${data.name}`
-} else {
-    showname.textContent = "Login First"
 }
 const token = localStorage.getItem("token");
 
@@ -144,4 +142,51 @@ if (token) {
     loginbtmn.addEventListener("click", () => {
         window.location.href = "./login.html"
     })
+}
+
+
+let meet_now = document.getElementById("meet-now")
+let chat_Now = document.getElementById("chat-now")
+
+meet_now.addEventListener("click", () => {
+    if (token) {
+
+        window.location.href = "./room.html?type=videochat"
+    } else {
+        Swal.fire({
+            icon: "error",
+            title: "Please Login First",
+            text: "Login To Enjoy Our Services",
+        });
+    }
+})
+
+
+chat_Now.addEventListener("click", () => {
+    if (token) {
+
+        window.location.href = "./room.html?type=message"
+    } else {
+        Swal.fire({
+            icon: "error",
+            title: "Please Login First",
+            text: "Login To Enjoy Our Services",
+        });
+    }
+})
+
+let imagehome = document.getElementById("image-home")
+
+imagehome.addEventListener("click", () => {
+    window.location.href = "./index.html"
+})
+
+let dash = document.getElementById("dash").addEventListener("click", callfunction)
+function callfunction() {
+    if (token) window.location.href = "./dashboard.html"
+    Swal.fire({
+        icon: "error",
+        title: "Please Login First",
+        text: "Login To Enjoy Our Services",
+    });
 }
