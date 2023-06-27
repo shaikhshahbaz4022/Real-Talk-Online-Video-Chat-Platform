@@ -4,11 +4,11 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: #EFEBE9;
+  background-color: #E0F7FA;
 }
 
 .navbar {
-  background-color: #5D4037;
+  background-color: #3949AB;
   display: flex;
  
   align-items: center;
@@ -17,9 +17,10 @@ body{
 }
 
 .navbar-brand img {
+  cursor: pointer;
   margin-left: 30px;
-  height: 40px;
-  border-radius: 3px;
+  height: 60px;
+  border-radius: 5px;
 }
 
 .navbar-menu {
@@ -43,6 +44,7 @@ body{
 
 .navbar-menu li a:hover {
   cursor: pointer;
+  font-size: 25px;
   /* background-color: #ddd; */
   text-decoration: underline;
 }
@@ -63,7 +65,7 @@ body{
   margin-right: 20px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #FFFDE7;
+  background-color: #90CAF9;
   color: black;
   border: none;
   padding: 10px 20px;
@@ -73,8 +75,9 @@ body{
 }
 
 .navbar-buttons button:hover {
-  background-color: #6D4C41;
-  color:white;
+  background-color: #E8EAF6;
+  font-size: 20px;
+  color:brown;
   font-weight: bolder;
 }
 
@@ -105,6 +108,7 @@ body{
   }
 
   .navbar-buttons {
+    cursor: pointer;
     margin-right: 20px;
     display: flex;
     flex-direction: row;
@@ -142,7 +146,7 @@ body{
   margin: 0 auto;
   padding: 20px;
   /* margin-top: 30px; */
-   background-color: #F9FBE7;
+   background-color: #C5CAE9;
 
   border: 1px solid #CCCCCC;
   border-radius: 10px;
@@ -250,7 +254,7 @@ body{
   }
 }
 .slideshow {
-  margin-top: 40px;
+  margin-top: 20px;
   border-radius: 10px;
   overflow: hidden;
   /* height: 400px; */
@@ -264,7 +268,7 @@ body{
 }
 
 #main-2 {
-  width: 90%;
+  width: 100%;
   display: flex;
   margin: auto;
   margin-top: 20px;
@@ -278,13 +282,14 @@ body{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 20px;
   text-align: center;
-  background-color: #FFF8E1;
+  background-color: #C5CAE9;
   border-radius: 5px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease; */
 }
 
 .item:hover {
+  cursor: pointer;
   transform: translateY(-5px);
 }
 
@@ -302,7 +307,7 @@ body{
 
 .item p {
   margin-top: 5px;
-  font-size: 16px;
+  font-size: 18px;
   color: #888;
 }
 
@@ -325,8 +330,8 @@ body{
 }
 #main-3 {
   /* border: 1px solid black; */
-  background-color: #F9FBE7;
-  width: 90%;
+  background-color: #C5CAE9;
+  width: 100%;
   display: flex;
   margin: auto;
   margin-top: 20px;
@@ -337,7 +342,7 @@ body{
 .left-div {
   flex-basis: 50%;
   padding: 20px;
-  background-color: #F9FBE7;
+  background-color: #C5CAE9;
 }
 
 .right-div {
@@ -353,7 +358,7 @@ body{
 
 .left-div h3 {
   font-size: 24px;
-  color: #888;
+  color: #455A64;
   margin-bottom: 30px;
 }
 
@@ -365,7 +370,7 @@ body{
 .buttons button {
   font-size: 18px;
   padding: 20px 35px;
-  background-color: #00ACC1;
+  background-color: #3949AB;
   color: white;
   border: none;
   border-radius: 5px;
@@ -373,9 +378,10 @@ body{
 }
 .buttons button:hover{
  font-weight: bolder;
+ cursor: pointer;
   font-size: 20px;
   color: white;
-  background-color: #5D4037;
+  background-color: #42A5F5;
 }
 .right-div{
   width: 50%;
@@ -387,13 +393,14 @@ body{
 }
 
 .right-div img {
-  width: 80%;
+  width: 70%;
   height: auto;
   border-radius: 8px;
 }
 
 .right-div img:hover {
   opacity: 0.8;
+  cursor: pointer;
   transform: scale(1.05);
 }
 
@@ -542,14 +549,6 @@ body{
     margin-bottom: 10px;
   }
 }
-
-
-
-
-
-
-
-
 
 
 
