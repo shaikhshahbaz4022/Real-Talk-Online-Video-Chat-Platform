@@ -120,7 +120,7 @@ const RoomRouter = express.Router()
 
 ## Footer Page
 
-![Footer](https://user-images.githubusercontent.com/115460646/236770024-990b7fb2-39ea-45ce-b1fb-4237b92cd0f7.png)
+
 
 ## Signing Page
 
@@ -132,8 +132,7 @@ const RoomRouter = express.Router()
 ![Screenshot (145)](https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237143981-2d97066b-1b9a-4200-b8da-c49adbbe6138.png)
 
 ## Dashboard Page
-
-![Screenshot (206)](https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237143138-948c2008-1de3-4547-8a1e-180ec1761a89.png)
+![image](https://github.com/aman1722/my-repo/assets/112754413/7ce90a5b-2dd6-419c-8bb9-72cdc20cf80f)
 
 
 ## Room Platform 
