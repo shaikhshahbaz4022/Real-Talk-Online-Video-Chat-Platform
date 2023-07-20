@@ -291,6 +291,7 @@ footer .flex:last-child a:hover{
 }
 
 #main_dashboard {
+    margin-bottom: 5%;
     width: 90%;
     /* border: 1px solid red; */
     margin: auto;

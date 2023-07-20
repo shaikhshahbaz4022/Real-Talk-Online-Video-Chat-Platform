@@ -1,16 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
-
-body{
+body {
   font-family: 'Open Sans', sans-serif;
   background-color: #E0F7FA;
 }
 
 .navbar {
-  background-color: #3949AB;
+ border: 2px groove white;
+
+  background-color: #1A237E;
   display: flex;
- 
   align-items: center;
   padding: 10px;
   border-radius: 5px;
@@ -21,6 +21,11 @@ body{
   margin-left: 30px;
   height: 60px;
   border-radius: 5px;
+}
+
+#showname {
+  color: white;
+
 }
 
 .navbar-menu {
@@ -65,7 +70,7 @@ body{
   margin-right: 20px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #90CAF9;
+  background-color: #E1F5FE;
   color: black;
   border: none;
   padding: 10px 20px;
@@ -75,9 +80,9 @@ body{
 }
 
 .navbar-buttons button:hover {
-  background-color: #E8EAF6;
+  background-color: #1e8cbe;
   font-size: 20px;
-  color:brown;
+  color: brown;
   font-weight: bolder;
 }
 
@@ -146,7 +151,7 @@ body{
   margin: 0 auto;
   padding: 20px;
   /* margin-top: 30px; */
-   background-color: #C5CAE9;
+  background-color: #E1F5FE;
 
   border: 1px solid #CCCCCC;
   border-radius: 10px;
@@ -158,20 +163,25 @@ body{
   align-items: center;
   justify-content: space-between;
 }
-.content div:nth-child(1){
+
+.content div:nth-child(1) {
   width: 40%;
 }
+
 .image {
   /* border: 1px solid black; */
-  width: 100%; /* Set the width of the container */
-  height: 500px; /* Set the desired height of the container */
-  overflow: hidden; /* Hide any overflowing content */
+  width: 100%;
+  /* Set the width of the container */
+  height: 600px;
+  /* Set the desired height of the container */
+  overflow: hidden;
+  /* Hide any overflowing content */
 }
 
 .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+
 }
 
 
@@ -240,10 +250,12 @@ body{
     font-size: 16px;
     margin-bottom: 10px;
   }
+
   .image img {
     /* max-width: 600px; */
     width: 100%;
   }
+
   .text p {
     font-size: 14px;
     margin-bottom: 10px;
@@ -253,8 +265,9 @@ body{
     font-size: 14px;
   }
 }
+
 .slideshow {
-  margin-top: 20px;
+
   border-radius: 10px;
   overflow: hidden;
   /* height: 400px; */
@@ -263,8 +276,9 @@ body{
 
 .slideshow img {
   width: 100%;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
+
 }
 
 #main-2 {
@@ -272,7 +286,7 @@ body{
   display: flex;
   margin: auto;
   margin-top: 20px;
-  
+
   justify-content: space-between;
 }
 
@@ -282,7 +296,7 @@ body{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 20px;
   text-align: center;
-  background-color: #C5CAE9;
+  background-color: #E1F5FE;
   border-radius: 5px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease; */
@@ -328,9 +342,10 @@ body{
     flex-basis: 100%;
   }
 }
+
 #main-3 {
   /* border: 1px solid black; */
-  background-color: #C5CAE9;
+  background-color: #E1F5FE;
   width: 100%;
   display: flex;
   margin: auto;
@@ -342,7 +357,7 @@ body{
 .left-div {
   flex-basis: 50%;
   padding: 20px;
-  background-color: #C5CAE9;
+  background-color: #E1F5FE;
 }
 
 .right-div {
@@ -376,16 +391,19 @@ body{
   border-radius: 5px;
   cursor: pointer;
 }
-.buttons button:hover{
- font-weight: bolder;
- cursor: pointer;
+
+.buttons button:hover {
+  font-weight: bolder;
+  cursor: pointer;
   font-size: 20px;
   color: white;
   background-color: #42A5F5;
 }
-.right-div{
+
+.right-div {
   width: 50%;
 }
+
 .right-div {
   display: flex;
   justify-content: center;
@@ -410,7 +428,8 @@ body{
     flex-wrap: wrap;
   }
 
-  .left-div, .right-div {
+  .left-div,
+  .right-div {
     flex-basis: 100%;
   }
 }
@@ -433,6 +452,7 @@ body{
     margin-bottom: 10px;
   }
 }
+
 #footer {
   display: flex;
   justify-content: space-around;
@@ -491,7 +511,7 @@ body{
 }
 
 #first {
-  
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -533,7 +553,7 @@ body{
     margin-left: 0;
     width: 100%;
   }
-  
+
   #second h1 {
     margin-top: 10px;
   }
@@ -549,7 +569,3 @@ body{
     margin-bottom: 10px;
   }
 }
-
-
-
-
