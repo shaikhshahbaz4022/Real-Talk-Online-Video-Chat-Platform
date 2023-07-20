@@ -119,6 +119,7 @@ const RoomRouter = express.Router()
 
 
 ## Footer Page
+![image](https://github.com/shaikhshahbaz4022/Real-Talk-Online-Video-Chat-Platform/assets/112754413/0d893c0c-e01e-4bb3-89f3-fe13327f838e)
 
 
 
