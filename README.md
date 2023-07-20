@@ -1,9 +1,10 @@
 # Real Talk Online Chat Platform
 ![real talk](https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237085721-15be1142-35b3-4608-a547-9a8b1528b2a3.png)
 
-# RealTalk - Real Time Screen Sharing  Chat Application
+# RealTalk - Real Time Video Chat Application
 
-**RealTalk is a communications platform that allows users to connect with video, audio, screen share, and chat.**
+**RealTalk is a communications platform that allows users to connect with video, audio and chat.**
+
 **The power of collaboration is that it can turn a group of individuals into a team empowered to achieve great things
 RealTalk is a type of application that enables users to share their computer screens with others in real-time over the internet. 
 It includes features that allows user to chat and video call with each other.**
@@ -27,8 +28,9 @@ It includes features that allows user to chat and video call with each other.**
 - Home page
 - Login/Signup
 - Dashboard
-- Google OAuth 
-- Github OAuth
+- Create Room
+- Join Room
+- Real time Message 
 
 ## Backend Part
 - Authentication using JWT
