@@ -115,7 +115,7 @@ const RoomRouter = express.Router()
 <br>
 
 ## Home Page
-![Screenshot (719)](https://github.com/shaikhshahbaz4022/chummy-run-6992/assets/119395145/538016b3-9a1f-44fb-a536-9f50932128f8)
+![image](https://github.com/aman1722/my-repo/assets/112754413/f330b4e8-ac47-4318-b121-ff2b41c36b0e)
 
 
 ## Footer Page
