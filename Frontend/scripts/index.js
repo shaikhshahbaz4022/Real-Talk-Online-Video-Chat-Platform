@@ -2,7 +2,7 @@ const images = [
     "https://cdn.pixabay.com/photo/2020/04/09/11/16/e-learning-5020950_1280.jpg",
     "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
     "https://plus.unsplash.com/premium_photo-1663047460384-78e37e140f2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    "https://images.unsplash.com/photo-1586985564150-11ee04838034?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=829&q=80"
 ];
 
 const slideshowImage = document.getElementById("slideshow-image");
@@ -183,10 +183,14 @@ imagehome.addEventListener("click", () => {
 
 let dash = document.getElementById("dash").addEventListener("click", callfunction)
 function callfunction() {
-    if (token) window.location.href = "./dashboard.html"
-    Swal.fire({
-        icon: "error",
-        title: "Please Login First",
-        text: "Login To Enjoy Our Services",
-    });
+    if (token) {
+        window.location.href = "./dashboard.html"
+    } else {
+
+        Swal.fire({
+            icon: "error",
+            title: "Please Login First",
+            text: "Login To Enjoy Our Services",
+        });
+    }
 }

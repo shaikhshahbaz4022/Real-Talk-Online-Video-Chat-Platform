@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/dashboard.css" />
     <link rel="icon" href="./Images/fav_icon-bg.png" />
+    <link rel="stylesheet" href="./styles/index.css">
     <script
       src="https://kit.fontawesome.com/714346974b.js"
       crossorigin="anonymous"
@@ -23,13 +24,32 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Loader -->
-    <link rel="stylesheet" href="./Style/loaderTornado.css" />
-    <script src="./Scripts/loaderTornado.js"></script>
+    <!-- <link rel="stylesheet" href="./styles/" />
+    <script src="./scripts/loaderTornado.js"></script> -->
     <!-- Loader End-->
   </head>
   <body>
     <!-- navbar -->
     
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img id="image-home" src="./images/real_talk_blue.png" alt="Logo">
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a id="dash" href="#">Dashboard</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Feature</a></li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+    <div class="navbar-user">
+      <h2 id="showname"></h2>
+      <div class="navbar-buttons">
+        <button id="login" class="btn-login">Login</button>
+
+      </div>
+    </div>
+  </nav>
 
     <br /><br />
     <!-- main content -->
@@ -78,13 +98,13 @@
         >
         <!-- <a href="./index.html"> -->
           <spam>
-          <div class="div_img_info" id="logout">
+          <div class="div_img_info" id="logout" >
             <img
               class="img_info"
               src="https://user-images.githubusercontent.com/115463536/229345490-98dd7120-789b-4411-899d-4a8ad9c84b5c.gif"
               alt=""
             />
-            <p>Logout</p>
+            <p id="show-here">Logout</p>
           </div>
         </spam>
         <!-- </a> -->
@@ -92,7 +112,7 @@
     </div>
 
 
-    <footer class="padding_4x">
+    <footer class="padding_4x ">
       <div class="flex">
         <section class="flex-content padding_1x">
           <h3>About</h3>
