@@ -139,8 +139,7 @@ const RoomRouter = express.Router()
 ![Screenshot (145)](https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237143981-2d97066b-1b9a-4200-b8da-c49adbbe6138.png)
 
 ## Dashboard Page
-![image](https://github.com/aman1722/my-repo/assets/112754413/7ce90a5b-2dd6-419c-8bb9-72cdc20cf80f)
-
+![Screenshot 2023-07-21 215731](https://github.com/shaikhshahbaz4022/Real-Talk-Online-Video-Chat-Platform/assets/119395145/999930bb-0e63-4c7e-a270-a3a5e4b47fed)
 
 ## Room Platform 
 
