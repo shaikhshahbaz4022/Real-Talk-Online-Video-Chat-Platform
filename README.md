@@ -1,5 +1,10 @@
 # Real Talk Online Chat Platform
-![real talk](https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237085721-15be1142-35b3-4608-a547-9a8b1528b2a3.png)
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img style="border-radius: 10px" src="https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237085721-15be1142-35b3-4608-a547-9a8b1528b2a3.png" alt="error">
+</div>
+
+
 
 # RealTalk - Real Time Video Chat Application
 
@@ -115,9 +120,10 @@ const RoomRouter = express.Router()
 <br>
 
 ## Home Page
-![image](https://github.com/aman1722/my-repo/assets/112754413/f330b4e8-ac47-4318-b121-ff2b41c36b0e)
-
-
+![Screenshot 2023-07-21 214818](https://github.com/shaikhshahbaz4022/Real-Talk-Online-Video-Chat-Platform/assets/119395145/5d0fffe6-a0bc-485a-8c30-3704933348e2)
+![Screenshot 2023-07-21 214837](https://github.com/shaikhshahbaz4022/Real-Talk-Online-Video-Chat-Platform/assets/119395145/484b207d-12b4-40c5-9c71-f0250cc45316)
+![Screenshot 2023-07-21 214854](https://github.com/shaikhshahbaz4022/Real-Talk-Online-Video-Chat-Platform/assets/119395145/8cc2d2b2-301e-48c9-9121-850c6ca5e1d0)
+![Screenshot 2023-07-21 214918](https://github.com/shaikhshahbaz4022/Real-Talk-Online-Video-Chat-Platform/assets/119395145/93c49e89-29c2-4f7c-8204-580a5c2f555a)
 ## Footer Page
 ![image](https://github.com/shaikhshahbaz4022/Real-Talk-Online-Video-Chat-Platform/assets/112754413/0d893c0c-e01e-4bb3-89f3-fe13327f838e)
 
