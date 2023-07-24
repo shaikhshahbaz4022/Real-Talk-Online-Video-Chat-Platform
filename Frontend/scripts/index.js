@@ -194,3 +194,21 @@ function callfunction() {
         });
     }
 }
+
+fetch(`https://real-talk-chat-server.onrender.com/start`)
+.then((res)=>res.json())
+.then((data)=>{
+  console.log(data);
+})
+.catch((err)=>{
+  console.log(err);
+})
+
+fetch(`https://video-chat-server-zbmb.onrender.com/start`)
+.then((res)=>res.json())
+.then((data)=>{
+  console.log(data);
+})
+.catch((err)=>{
+  console.log(err);
+})
