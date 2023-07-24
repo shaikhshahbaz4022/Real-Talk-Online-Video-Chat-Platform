@@ -4,6 +4,7 @@ const cors = require("cors")
 const app = express();
 
 app.use(cors());
+app.use(express.json());
 const socketio = require("socket.io");
 const http = require("http");
 const {
@@ -20,7 +21,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 app.get('/start', (req, res) => {
-  res.send("welcome to Real Talk chat server");
+  res.status(200).send({msg:"welcome to Real Talk chat server"});
 })
 
 // const defaultNPS = io.of("/");
