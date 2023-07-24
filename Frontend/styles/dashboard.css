@@ -118,6 +118,19 @@ fieldset{
     cursor: pointer;
    
 }
+#showname{
+    margin-top: 9px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+  }
+  #toggerId{
+    color: white;
+  }
+  .navbar-brand{
+    color: white;
+    font-size: 30px;
+  }
 
 @media (max-width:920px){
     .flex{
