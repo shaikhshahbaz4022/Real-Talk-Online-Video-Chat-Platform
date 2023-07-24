@@ -4,7 +4,7 @@ let showname = document.getElementById("showname")
 const data = JSON.parse(localStorage.getItem("userDetails")) || null;
 // console.log(data);
 if (data) {
-    showname.textContent = ` Mr. ${data.name}`
+    showname.textContent = `${data.name}`
 }
 const token = localStorage.getItem("token");
 
