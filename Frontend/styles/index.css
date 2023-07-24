@@ -13,7 +13,7 @@ body{
  
   align-items: center;
   padding: 10px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 .navbar-brand{
   color: white;
