@@ -33,7 +33,7 @@ postRouter.get('/auth/google/success', (req, res) => {
   //     console.log('File sent successfully');
   //   }
   // });
-  res.redirect("https://real-talk-online-chat.netlify.app/");
+  res.redirect("https://realtalk-online-videochat.netlify.app/");
 });
 
 
