@@ -50,11 +50,11 @@ login.addEventListener("click", (e) => {
         )
         localStorage.setItem("userDetails", JSON.stringify(res.user));
         localStorage.setItem("token", res.token);
-        localStorage.setItem("signedIn",true)
-        setTimeout(()=>{
+        localStorage.setItem("signedIn", true)
+        setTimeout(() => {
           window.location.href = "./index.html";
-        },2000)
-        
+        }, 2000)
+
 
       } else {
         Swal.fire({
@@ -80,6 +80,21 @@ login.addEventListener("click", (e) => {
     });
 });
 
+fetch(`https://real-talk-chat-server.onrender.com/start`)
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  })
 
 
-
+fetch(`https://video-chat-server-zbmb.onrender.com/start`)
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  })
