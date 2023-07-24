@@ -175,11 +175,11 @@ chat_Now.addEventListener("click", () => {
     }
 })
 
-let imagehome = document.getElementById("image-home")
+// let imagehome = document.getElementById("image-home")
 
-imagehome.addEventListener("click", () => {
-    window.location.href = "./index.html"
-})
+// imagehome.addEventListener("click", () => {
+//     window.location.href = "./index.html"
+// })
 
 let dash = document.getElementById("dash").addEventListener("click", callfunction)
 function callfunction() {
